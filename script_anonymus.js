@@ -22,7 +22,7 @@ var upperCase = function(a)
 {
     for(i=0;i<a.length;i++)
     {
-        array[i] = a[i].toUpperCase();
+        array[i] =  a[i].charAt(0).toUpperCase(0)+a[i].substr(1).toLowerCase();
         
     }
     console.log(array);
