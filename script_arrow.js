@@ -15,13 +15,13 @@ var odd = (a)=>{
 odd(number);
 
 // Quest:2 Convert all the string in title caps in string array
-var stingArray = ["cat","dog","elephant","tiger","lion"];
+var stingArray = ["cat","dog","elePhant","tIGer","lion"];
 var array=[];
 // Arrow Function Declaration and process
 var upperCase=(a)=>{
     for(i=0;i<a.length;i++)
     {
-        array[i] = a[i].toUpperCase();
+        array[i] =  a[i].charAt(0).toUpperCase(0)+a[i].substr(1).toLowerCase();
         
     }
     console.log(array);
