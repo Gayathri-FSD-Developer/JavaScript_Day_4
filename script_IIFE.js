@@ -18,12 +18,12 @@ var number =[1,2,3,4,5,6,7];
 })(number);
 
 // Quest:2 Convert all the string in title caps in string array
-var stingArray = ["cat","dog","elephant","tiger","lion"];
+var stingArray = ["cat","doG","elePHant","tiger","lion"];
 var array=[];
 (function upperCase(a){
     for(i=0;i<a.length;i++)
     {
-        array[i] = a[i].toUpperCase();
+        array[i] =  a[i].charAt(0).toUpperCase(0)+a[i].substr(1).toLowerCase();
         
     }
     console.log(array);
